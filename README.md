@@ -2,9 +2,11 @@
 
 Public distribution repository for CCHL Tech Utilities.
 
-This repository contains the freely downloadable Windows bootstrap installer and will contain encrypted manager/catalog/utility release assets and SHA-256 checksum files. It intentionally contains no private source, GitHub credentials, distribution password, or decrypted package content.
+> **[Download CCHL Tech Utilities Installer](https://github.com/mcann1423/CCHL-Tech-Utilities-Installer/releases/latest/download/Install-CCHLTechUtilities.cmd)**
 
-## Planned installation flow
+This repository contains the freely downloadable Windows bootstrap installer, encrypted manager/catalog/utility release assets, and SHA-256 checksum files. It intentionally contains no private source, GitHub credentials, distribution password, or decrypted package content.
+
+## Installation
 
 1. Download only `Install-CCHLTechUtilities.cmd` and its SHA-256 checksum from a release.
 2. Verify the checksum.
