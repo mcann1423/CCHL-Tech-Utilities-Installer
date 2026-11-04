@@ -10,7 +10,7 @@ del /f /q "%CCHL_BOOTSTRAP%" >nul 2>&1
 exit /b %CCHL_EXIT%
 ::CCHL_POWERSHELL_PAYLOAD
 [CmdletBinding()]param()
-Set-StrictMode -Version Latest;$ErrorActionPreference='Stop'
+Set-StrictMode -Version Latest;$ErrorActionPreference='Stop';Add-Type -AssemblyName System.Security
 $magic=[Text.Encoding]::ASCII.GetBytes('CCHLENC1');$owner='mcann1423';$repo='CCHL-Tech-Utilities-Installer';$assetName='cchl-tools-manager.cchl';$root=Join-Path $env:LOCALAPPDATA 'CCHL\TechUtilities';$entropy=[Text.Encoding]::UTF8.GetBytes('CCHL.TechUtilities.DistributionPassword.v1')
 function Eq([byte[]]$a,[byte[]]$b){if($a.Length-ne$b.Length){return $false};$d=0;for($i=0;$i-lt$a.Length;$i++){$d=$d-bor($a[$i]-bxor$b[$i])};$d-eq0}
 function Plain([Security.SecureString]$s){$p=[Runtime.InteropServices.Marshal]::SecureStringToBSTR($s);try{[Runtime.InteropServices.Marshal]::PtrToStringBSTR($p)}finally{[Runtime.InteropServices.Marshal]::ZeroFreeBSTR($p)}}
