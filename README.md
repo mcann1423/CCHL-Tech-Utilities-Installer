@@ -2,7 +2,7 @@
 
 Public distribution repository for CCHL Tech Utilities.
 
-This repository will contain the freely downloadable Windows bootstrap installer, encrypted manager/catalog/utility release assets, SHA-256 checksum files, and public installation instructions. It intentionally contains no private source, GitHub credentials, distribution password, or decrypted package content.
+This repository contains the freely downloadable Windows bootstrap installer and will contain encrypted manager/catalog/utility release assets and SHA-256 checksum files. It intentionally contains no private source, GitHub credentials, distribution password, or decrypted package content.
 
 ## Planned installation flow
 
