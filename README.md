@@ -6,8 +6,8 @@ This repository contains the freely downloadable Windows bootstrap installer and
 
 ## Planned installation flow
 
-1. Download `Install-CCHLTechUtilities.cmd`, `Install-CCHLTechUtilities.ps1`, and `CCHL.Bootstrap.Crypto.psm1` from the same release into one folder, along with their SHA-256 sidecars.
-2. Verify the three checksums.
+1. Download only `Install-CCHLTechUtilities.cmd` and its SHA-256 checksum from a release.
+2. Verify the checksum.
 3. Run `Install-CCHLTechUtilities.cmd` as the intended Windows user.
 4. Enter the CCHL distribution password supplied through an authorized internal channel.
 5. The installer validates the password by decrypting the manager, then stores it protected with Windows DPAPI for that user.
